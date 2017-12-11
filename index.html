@@ -16,7 +16,8 @@
 
 <div id="body">
 
-    <header id="header_wrapper">
+    <header id="header_out_wrapper">
+        <div id="header_wrapper">
         <div id="header_left">
             <a href="/">
                 <h1 class="logo_big_title">A.F.C</h1>
@@ -35,22 +36,39 @@
             <a href="#" class="nav_item">下载</a>
             <a href="#" class="nav_item">Ad Shelf</a>
         </nav>
-
+        </div>
     </header>
 
 
     <section id="content_wrapper">
+
+        <div class="segment" id="case_0">
+            <div class="case_block" id="case_0_text">
+                <br />
+                <br />
+                <br />
+
+                <h3>自动计时</h3>
+                <p>A.F.C供您知晓最近持续工作时间和今日累计工作时间。</p>
+            </div>
+
+            <!--<div>-->
+                <!--<img src="images/menu_fadeout_short.png" />-->
+            <!--</div>-->
+
+        </div>
         <div class="segment" id="case_1">
 
-            <div class="type_1_right">
-                <h3>
-                    了解全天工作状态
+            <div class="case_block">
+                <h3 class="text-right">
+                    全天工作状态
                 </h3>
-                <p>
-                    A.F.C帮助您记录在电脑前工作的时间和强度。让您掌握任何一天(周、月）的实际工作小时数。
+                <p class="text-right">
+                    A.F.C帮助您记录在电脑前工作的时间和强度
                 </p>
+                <p class="text-right">让您掌握任何一天(周、月）的实际工作小时数</p>
             </div>
-            <div class="type_1_left">
+            <div class="case_block">
                 <div id="chart_1_header_comment">
                     <div class="chart_header_comment_item">Day: 12/11</div>
                     <div class="chart_header_comment_item">Sum: 7h23m</div>
@@ -65,7 +83,48 @@
 
 
         <div class="segment" id="case_2">
+            <div class="case_block">
+                <h3>超载工作劝止</h3>
+                <p>A.F.C会在您连续超载工作时，</p>
+                <p>提醒您适度休息，减少久坐，保持您的健康。</p>
+            </div>
 
+        </div>
+
+
+        <div class="segment" id="case_3">
+
+            <div class="case_block">
+                <h3 class="text-right">
+                    App用量
+                </h3>
+                <p class="text-right">
+                    A.F.C帮助您总结每天花费在各App上的时间，方便您做出时间管理的决策。
+                </p>
+            </div>
+            <div class="case_block">
+                <div id="chart_2_header_comment">
+                    <!--<div class="chart_header_comment_item">Day: 12/11</div>-->
+                    <!--<div class="chart_header_comment_item">Sum: 7h23m</div>-->
+                </div>
+                <div class="chart-container" id="chart_container_2">
+                    <canvas id="my_chart_2"></canvas>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="segment" id="case_4">
+
+            <div class="case_block">
+                <h3 >长期趋势</h3>
+                <p >A.F.C为您整理过往的历史，帮助您掌握工作时间发展趋势。</p>
+            </div>
+            <div class="chart-container" id="chart_container_3">
+                <canvas id="my_chart_3"></canvas>
+            </div>
         </div>
 
     </section>
@@ -73,7 +132,9 @@
 
     <footer class="wrapper">
 
-        footer
+        <a href="#" >关于</a>
+        <a href="#" >&copy; 2017 boring universe</a>
+
 
     </footer>
 
