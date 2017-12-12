@@ -109,16 +109,26 @@ function get_minute_hm_text(minute){
     var today_m = minute - today_h*60
     return today_h > 0 ? "" + today_h + "h" + today_m + "m" : "" + today_m + "m"
 }
-
+function random_color(){
+    var r = Math.floor(Math.random() * 255);
+    var g = Math.floor(Math.random() * 255);
+    var b = Math.floor(Math.random() * 255);
+    return "rgb(" + r + "," + g + "," + b + ")";
+}
 function init_chart_2() {
     console.log('init chart 2')
 
     var ctx = document.getElementById("my_chart_2").getContext('2d');
 
 
-    var labels = ['微信', 'SourceTree', 'Adobe Photoshop', 'Sketch', 'Sublime Text', 'Safari', 'Terminal']
-    var datas = [230, 166,  210, 58, 99, 47, 20]
-    var colors = ['#85C0F4', '#85D0F4','#85C0E4','#95C0F4','#75C0F4','#85B0F4','#85C0C4']
+    var labels = ['微信', 'SourceTree', 'Adobe Photoshop', "日历", 'Sketch', 'Sublime Text', '火狐浏览器']
+    var datas = [] //[230, 166,  210, 58, 99, 47, 20]
+    var colors = [] //['#85C0F4', '#85D0F4','#85C0E4','#95C0F4','#75C0F4','#85B0F4','#85C0C4']
+
+    for(var i = 0; i < 7; i++) {
+        datas.push(Math.floor(Math.random() * 300))
+        colors.push(random_color())
+    }
 
 
 
