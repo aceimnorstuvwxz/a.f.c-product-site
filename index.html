@@ -33,8 +33,8 @@
         </div>
 
         <nav id="header_right">
-            <a href="#" class="nav_item">下载</a>
-            <a href="#" class="nav_item">Ad Shelf</a>
+            <a class="nav_item  btn-primary" onclick="school_to('download')">下载</a>
+            <a href="#" class="nav_item link_btn">Ad Shelf</a>
         </nav>
         </div>
     </header>
@@ -49,12 +49,12 @@
         <p>
             亲爱的，长时间保持坐姿，它会对男性裆部的器官造成日积月累的伤害。<br />
             如果您想要尽情投入到工作中的同时，0压力地保持办公健康，
-            多方面地认识自己办公状态，免费且开源的A.F.C软件可以帮助到您。
+            多方面地认识自己的办公状态，免费且开源的A.F.C软件可以帮助到您。
         </p>
 
         <br />
         <p>
-            A.F.C，取"Away From Chair"，离开椅子之意。我们的愿景是帮助长期使用计算机办公的人群，特别是软件工程师等高专注高智力工作的人群，培养离开椅子的习惯，保持我们重要器官的健康。
+            A.F.C，取"Away From Chair(离开椅子)"之意。我们的愿望是帮助长期使用计算机办公的人群，特别是软件工程师等高专注高智力工作的人群，培养离开椅子的习惯，保持我们重要器官的健康。
         </p>
     </section>
 
@@ -78,16 +78,16 @@
         <!--</div>-->
         <div class="segment" id="case_1">
 
-            <div class="case_block">
-                <h3 class="text-right">
+            <div class="case_block case_block_title">
+                <h3 class="text-right case-title-right">
                     获悉全天工作状态
                 </h3>
                 <p class="text-right">
-                    A.F.C为您记录在电脑前工作的时间和强度
+                    A.F.C为您记录在电脑前工作的时间和强度，
                 </p>
-                <p class="text-right">让您掌握任何一天(周、月）的实际工作小时数</p>
+                <p class="text-right">让您掌握任何一天(周、月）的实际工作小时数。</p>
             </div>
-            <div class="case_block">
+            <div class="case_block case_block_body">
                 <div id="chart_1_header_comment">
                     <div class="chart_header_comment_item">Day: 12/11</div>
                     <div class="chart_header_comment_item">Sum: 7h23m</div>
@@ -102,10 +102,10 @@
 
 
         <div class="segment" id="case_2">
-            <div class="case_block">
-                <h3>劝止超载工作时间</h3>
-                <p>A.F.C在您连续工作超长时，</p>
-                <p>提醒您适度休息，减少久坐的发生，保持您的器官健康。</p>
+            <div class="case_block  case_block_title">
+                <h3 class="text-left case-title-left">劝止超载工作时间</h3>
+                <p class="text-left">A.F.C在您连续工作超长时，</p>
+                <p class="text-left">提醒您离开椅子，减少久坐的发生，保持您的器官健康。</p>
             </div>
 
         </div>
@@ -113,15 +113,15 @@
 
         <div class="segment" id="case_3">
 
-            <div class="case_block">
-                <h3 class="text-left">
+            <div class="case_block  case_block_title">
+                <h3 class="text-right case-title-right">
                     准确的App用量统计
                 </h3>
-                <p class="text-left">
+                <p class="text-right">
                     A.F.C为您总结每天花费在各App上的时间，支持您做出时间管理的决策。
                 </p>
             </div>
-            <div class="case_block">
+            <div class="case_block case_block_body">
                 <div id="chart_2_header_comment">
                     <!--<div class="chart_header_comment_item">Day: 12/11</div>-->
                     <!--<div class="chart_header_comment_item">Sum: 7h23m</div>-->
@@ -137,11 +137,11 @@
 
         <div class="segment" id="case_4">
 
-            <div class="case_block">
-                <h3 class="text-right">发现您的长期趋势</h3>
-                <p class="text-right">A.F.C为您整理过往的历史，帮助您掌握工作时间发展趋势。</p>
+            <div class="case_block  case_block_title">
+                <h3 class="text-left case-title-left">发现您的长期趋势</h3>
+                <p class="text-left">A.F.C为您整理过往的历史数据，帮助您掌握工作时间的发展趋势。</p>
             </div>
-            <div class="chart-container" id="chart_container_3">
+            <div class="chart-container case_block case_block_body" id="chart_container_3">
                 <canvas id="my_chart_3"></canvas>
             </div>
         </div>
@@ -149,18 +149,19 @@
 
         <div class="segment" id="download">
 
-            <div class="case_block">
-                <h3 class="text-right">下载</h3>
-                <p class="text-right">A.F.C是免费且开源的软件</p>
-                <p class="text-right">请选择适合您操作系统的版本下载</p>
+            <div class="case_block  case_block_title">
+                <h3 class="text-right case-title-right">下载</h3>
+                <p class="text-right">A.F.C是免费且开源的软件。</p>
+                <p class="text-right">选择对应操作系统的版本下载吧。</p>
 
             </div>
 
-            <div class="case_block text-center" id="download_actions">
+            <div class="case_block case_block_body text-center" id="download_actions">
                 <div>
                     <button class="btn_download">Free A.F.C for MacOS</button>
                     <button class="btn_download">Free A.F.C for Windows</button>
                 </div>
+                <p class="little_comment">下载将表示您同意<a href="#" class="link_a">用户协议</a></p>
             </div>
         </div>
 
@@ -168,16 +169,15 @@
 
         <div class="segment" id="feedback">
 
-            <div class="case_block">
-                <h3 class="text-left">Feedback</h3>
+            <div class="case_block  case_block_title">
+                <h3 class="text-left case-title-left">Feedback</h3>
                 <p class="text-left">帮助我们做得不一般。</p>
 
             </div>
 
-            <div class="case_block text-center" id="download_actions">
+            <div class="case_block case_block_body text-center" id="feedback_actions">
                 <div>
                     <ul>
-                        <li>留言本</li>
                         <li>Github Issues</li>
                         <li>微博</li>
                         <li>Twitter</li>
@@ -191,15 +191,16 @@
 
         <div class="segment" id="donate">
 
-            <div class="case_block">
-                <h3 class="text-left">投食</h3>
-                <p class="text-left">本是简单的小工具。</p>
-                <p class="text-left">如果喜欢，就把它推荐给您的朋友吧。</p>
-                <p class="text-left">如果想要鼓励下作者，可以通过微信投币，但不是必要的。</p>
+            <div class="case_block  case_block_title">
+                <h3 class="text-right case-title-right">投食</h3>
+                <p class="text-right">本是简单的小工具。</p>
+                <p class="text-right">如果喜欢，就把它推荐给您的朋友吧。</p>
+                <p class="text-right">如果想要鼓励下作者，可以通过微信投食，但不是必要的。</p>
+                <p class="text-right"><a class="link_a">List</a></p>
 
             </div>
 
-            <div class="case_block text-center" id="download_actions">
+            <div class="case_block case_block_body text-center" id="donate_actions">
                 <div>
                     <img id="donate_img" src="images/donate2.png" />
                 </div>
@@ -208,13 +209,12 @@
     </section>
 
 
+    <footer id="foot">
 
-
-    <footer class="wrapper">
-
-        <a href="#" >关于</a>
-        <a href="#" >&copy; 2017 boring universe</a>
-
+        <a href="#" >用户协议</a>
+        <a href="#" >友链 关于</a>
+        <a href="#" >&copy; 2017 boringuniverse.com</a>
+        <a href="http://www.miibeian.gov.cn/">浙ICP备17048489号-6</a>
 
     </footer>
 

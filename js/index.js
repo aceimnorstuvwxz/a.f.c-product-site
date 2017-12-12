@@ -74,7 +74,7 @@ function init_chart_1() {
                         }
                     },
                     gridLines: {
-                        color: "#FFF",
+                        color: "#FFFFFF00",
                     },
                     ticks:{
                         autoSkipPadding: 15
@@ -252,4 +252,9 @@ function init_chart_3() {
     }
 
     window.chart_3 = new Chart(ctx, config);
+}
+
+
+function school_to(des_id) {
+    document.getElementById(des_id).scrollIntoView({behavior: "smooth"});
 }
