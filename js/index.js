@@ -160,7 +160,7 @@ function init_chart_3() {
     var labels = []
     var datas = []
 
-    var current_offset = 24
+    var current_offset = 21
     var last = 20
     for(; current_offset != 0; current_offset--) {
 
@@ -168,22 +168,21 @@ function init_chart_3() {
         date.setDate(date.getDate() - current_offset)
         labels.push (date.toISOString().slice(5, 10))
 
-        if (current_offset > 10) {
+        if (current_offset > 7) {
             var val = (30 - current_offset) * (30 - current_offset)*0.1 + Math.random()* 20
-
-
-            datas.push(Math.floor(val))
+            // datas.push(Math.floor(val))
+            datas.push(0)
         }
 
     }
 
     var i = 1
-    for(; i != 11; i++){
+    for(; i != 8; i++){
         datas.push(Math.floor(100 * i * Math.random()))
     }
 
     // datas = datas.concat([100,300,200,100,266,600])
-    var max = 1000;
+    var max = 800;
 
 
     var config = {
