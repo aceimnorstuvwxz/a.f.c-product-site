@@ -13,7 +13,6 @@ window.addEventListener("load", function(event) {
 
 
 function init_chart_1() {
-    console.log('init chart 1')
 
     var ctx = document.getElementById("my_chart_1").getContext('2d');
 
@@ -116,7 +115,6 @@ function random_color(){
     return "rgb(" + r + "," + g + "," + b + ")";
 }
 function init_chart_2() {
-    console.log('init chart 2')
 
     var ctx = document.getElementById("my_chart_2").getContext('2d');
 
@@ -162,7 +160,6 @@ function init_chart_2() {
 
 
 function init_chart_3() {
-    console.log('init chart 2')
 
     var ctx = document.getElementById("my_chart_3").getContext('2d');
 
