@@ -16,7 +16,11 @@ a {
     text-decoration: none;
 }
 
-/* ---------- Header ----------*/
+.ref{
+    text-decoration: underline;
+}
+
+    /* ---------- Header ----------*/
 #header_out_wrapper{
     /*border-bottom: solid 1px #666;*/
     /*border-top: #333 0px solid;*/
@@ -128,6 +132,7 @@ a {
 #app{
     width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0px 5px;
 }
 
 
