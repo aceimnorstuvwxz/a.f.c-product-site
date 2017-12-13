@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("hello")
-
     //dom加载完毕后就执行
 })
 
