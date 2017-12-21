@@ -24,7 +24,7 @@ a {
 #header_out_wrapper{
     /*border-bottom: solid 1px #666;*/
     /*border-top: #333 0px solid;*/
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 
 }
 #header_wrapper {
@@ -60,13 +60,20 @@ a {
 }
 
 .logo_little_text {
-    font-family: CourierNewPS-BoldMT, STFangsong;
+    font-family: system-ui, sans-serif;
+
+    /*font-family: CourierNewPS-BoldMT, STFangsong;*/
     font-size: 10px;
-    color: #888;
+    /*color: #CCC;*/
+    margin-left: 10px;
 }
 
 #header_little_comment {
-    margin-top: 4px;
+    margin-top: 10px;
+}
+
+.sparse{
+    letter-spacing:2px;
 }
 
 #header_logo_img {
@@ -96,18 +103,22 @@ a {
 .btn-primary{
     cursor: pointer;
     /*font-weight: bold;*/
-    border: 1px #666 solid;
+    border: 2px #71AEE7 solid;
     border-radius: 3px;
     padding: 5px 9px;
     /*color: #81BEF7;*/
 }
 
 .btn-primary:hover{
-    background: #81BEF7;
+    background: #71AEE7;
+    color: #FFF;
+
 }
 
 .btn-primary:active{
-    background: #71AEE7;
+    background: #51AEE7;
+    color: #FFF;
+
 }
 
 
@@ -132,9 +143,10 @@ a {
 }
 
 #app{
-    width: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 0px 5px;
+    width: 340px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    margin: 0px 0px;
+    margin-left: 25px;
 }
 
 
@@ -221,12 +233,12 @@ a {
 #chart_container_1{
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 200px;
 }
 
 #case_2{
     /*margin-top: 150px;*/
-    background: url("../images/alert.png") no-repeat;
+    background: url("../images/alert2.png") no-repeat;
     background-position: right top;
 }
 
@@ -255,12 +267,13 @@ a {
 
 /*   download    */
 #download{
+    margin-bottom: 20px;
 }
 .btn_download{
     display: block;
     margin: 15px auto;
     outline: none;
-    border: solid 1px #333;
+    border: solid 2px #71AEE7;
     padding: 1em 2em;
     width: 18em;
     background: #fff;
@@ -268,11 +281,14 @@ a {
 }
 
 .btn_download:hover{
-    background: #81BEF7;
+    background: #71AEE7;
+    color: #FFF;
 }
 
 .btn_download:active{
-    background: #71AEE7;
+    background: #51AEE7;
+    color: #FFF;
+
 }
 
 #download_actions{
@@ -283,11 +299,15 @@ a {
 
 /* feedback */
 
+#feedback_items{
+    margin: 20px 0px;
+}
+
 #feedback{
 }
 
 #feedback_items>li{
-    margin: 5px;
+    margin: 15px;
 }
 
 /*  donate   */
@@ -312,7 +332,6 @@ a {
     color: #999999;
     font-size: small;
 }
-
 
 
 /* mobile */

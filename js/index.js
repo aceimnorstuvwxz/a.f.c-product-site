@@ -87,7 +87,7 @@ function init_chart_1() {
 
                     ticks: {
                         beginAtZero:true,
-                        max:100
+                        max:160
                     },
                     display: false,
                     scaleLabel: {
@@ -107,10 +107,13 @@ function get_minute_hm_text(minute){
     var today_m = minute - today_h*60
     return today_h > 0 ? "" + today_h + "h" + today_m + "m" : "" + today_m + "m"
 }
+
 function random_color(){
-    var r = Math.floor(Math.random() * 255);
-    var g = Math.floor(Math.random() * 255);
-    var b = Math.floor(Math.random() * 255);
+    var start = 100
+    var swipe = 100
+    var r = Math.floor(start + Math.random() * swipe);
+    var g = Math.floor(start + Math.random() * swipe);
+    var b = Math.floor(start + Math.random() * swipe);
     return "rgb(" + r + "," + g + "," + b + ")";
 }
 function init_chart_2() {
@@ -119,11 +122,11 @@ function init_chart_2() {
 
 
     var labels = ['微信', 'SourceTree', 'Adobe Photoshop', "日历", 'Sketch', 'Sublime Text', '火狐浏览器']
-    var datas = [] //[230, 166,  210, 58, 99, 47, 20]
+    var datas = [50, 36,  360, 58, 99, 47, 20]
     var colors = [] //['#85C0F4', '#85D0F4','#85C0E4','#95C0F4','#75C0F4','#85B0F4','#85C0C4']
 
     for(var i = 0; i < 7; i++) {
-        datas.push(Math.floor(Math.random() * 300))
+        // datas.push(Math.floor(Math.random() * 300))
         colors.push(random_color())
     }
 
