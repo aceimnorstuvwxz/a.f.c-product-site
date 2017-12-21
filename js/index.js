@@ -52,7 +52,7 @@ function init_chart_1() {
                 intersect: false,
                 callbacks: {
                     label: function(tooltipItem, data) {
-                        return "Energy:" + tooltipItem.yLabel
+                        return "能量:" + tooltipItem.yLabel
                     }
                 }
             },
@@ -122,7 +122,7 @@ function init_chart_2() {
 
 
     var labels = ['微信', 'SourceTree', 'Adobe Photoshop', "日历", 'Sketch', 'Sublime Text', '火狐浏览器']
-    var datas = [50, 36,  360, 58, 99, 47, 20]
+    var datas = [50, 36,  367, 58, 99, 47, 20]
     var colors = [] //['#85C0F4', '#85D0F4','#85C0E4','#95C0F4','#75C0F4','#85B0F4','#85C0C4']
 
     for(var i = 0; i < 7; i++) {
@@ -205,8 +205,9 @@ function init_chart_3() {
                 borderWidth: 0.5,
                 data: datas,
                 fill: false,
+                lineTension: 0.1,
 
-                pointRadius: 0.5,
+                pointRadius: 1.0,
                 pointHoverRadius: 0.5,
 
             }]
@@ -227,7 +228,7 @@ function init_chart_3() {
                 callbacks: {
                     label: function(tooltipItem, data) {
                         var floatv = parseFloat(tooltipItem.yLabel)
-                        return "Use:" + get_minute_hm_text(floatv)
+                        return "使用:" + get_minute_hm_text(floatv)
                     }
                 }
             },

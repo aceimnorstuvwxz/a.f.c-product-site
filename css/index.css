@@ -20,6 +20,15 @@ a {
     text-decoration: underline;
 }
 
+.special_font{
+    font-family: Georgia, serif;
+}
+
+.big{
+    font-size: large;
+    color: #8B6BA5;
+    font-weight: bold;
+}
     /* ---------- Header ----------*/
 #header_out_wrapper{
     /*border-bottom: solid 1px #666;*/
@@ -54,9 +63,11 @@ a {
 }
 
 .logo_big_title {
-    font-family: CourierNewPS-BoldMT;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 29px;
     margin-right: 3px;
+    letter-spacing:2px;
+    /*color: #333;*/
 }
 
 .logo_little_text {
@@ -92,33 +103,30 @@ a {
 }
 
 .link_btn:hover{
-    border-bottom: 3px solid #81BEF7;
+    border-bottom: 3px solid #333;
 }
 
 .link_btn:active{
-    border-bottom: 3px solid #71AEE7;
-    color: #71AEE7;
+    border-bottom: 3px solid #000;
+    color: #000;
 }
 
 .btn-primary{
     cursor: pointer;
-    /*font-weight: bold;*/
-    border: 2px #71AEE7 solid;
-    border-radius: 3px;
+    border: 2px #333 solid;
     padding: 5px 9px;
-    /*color: #81BEF7;*/
 }
 
 .btn-primary:hover{
-    background: #71AEE7;
+    background: #333;
     color: #FFF;
 
 }
 
 .btn-primary:active{
-    background: #51AEE7;
+    background: #000;
     color: #FFF;
-
+    border: 2px #000 solid;
 }
 
 
@@ -273,20 +281,20 @@ a {
     display: block;
     margin: 15px auto;
     outline: none;
-    border: solid 2px #71AEE7;
+    border: solid 1px #333;
     padding: 1em 2em;
     width: 18em;
     background: #fff;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
 }
 
 .btn_download:hover{
-    background: #71AEE7;
+    background: #333;
     color: #FFF;
 }
 
 .btn_download:active{
-    background: #51AEE7;
+    background: #000;
     color: #FFF;
 
 }
@@ -295,6 +303,10 @@ a {
     margin-top: 50px;
 }
 
+#protocal{
+    color: #333;
+    /*padding-right: 500px;*/
+}
 
 
 /* feedback */
@@ -323,14 +335,17 @@ a {
 /* foot */
 #foot {
     text-align: center;
-    border-top: 1px solid #81BEF7;
+    /*border-top: 2px solid #8B6BA5;*/
     padding: 0px;
-    background: #333;
+    background: #8B6BA5;
+    color: #FFFFFF;
 }
 
 #foot>a{
-    color: #999999;
+    color: #FFFFFF;
     font-size: small;
+    margin: 0px 5px;
+    letter-spacing: 1px;
 }
 
 
